@@ -1,0 +1,14 @@
+[Unit]
+Description=Pixi Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/path/to/your/working/directory
+ExecStart=/usr/bin/pixi run ePrijzenGraphs
+Restart=on-failure
+User=pi
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

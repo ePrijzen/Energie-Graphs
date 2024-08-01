@@ -1,0 +1,19 @@
+[api]
+  ip = "127.0.0.1"
+  port = "5000"
+  http = "http"
+  email = "op://Server-Prod/ePrijzen Api Graphs Login/username"
+  password = "op://Server-Prod/ePrijzen Api Graphs Login/password"
+  salt = "op://Server-Prod/ePrijzen Api Graphs Login/salt"
+
+[ftp]
+  ip = "op://Server-$APP_ENV/Graphs FTP/ip"
+  user = "op://Server-$APP_ENV/Graphs FTP/username"
+  pwd = "op://Server-$APP_ENV/Graphs FTP/password"
+
+[google]
+  sheeturl = "op://Server-Prod/Graphs Google Sheet/url"
+
+# fill data from 1password
+#> APP_ENV=Prod op inject -i config_sample.toml -o production.toml
+#> APP_ENV=Dev op inject -i config_sample.toml -o development.toml

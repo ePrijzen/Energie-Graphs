@@ -1,0 +1,25 @@
+[project]
+name = "energie-graphs"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Theo van der Sluijs <theo@vandersluijs.nl>"]
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "linux-aarch64"]
+
+[tasks]
+ePrijzenGraphs = "python src/main.py"
+
+[activation.env]
+PY_ENV = "prod"
+
+[dependencies]
+pandas = ">=2.2.2,<2.3"
+apscheduler = ">=3.10.4,<3.11"
+matplotlib = ">=3.9.0,<3.10"
+numpy = ">=2.0.0,<2.1"
+pyyaml = ">=6.0.1,<6.1"
+requests = ">=2.32.3,<2.33"
+python-dateutil = ">=2.9.0,<2.10"
+gspread = ">=5.12.4,<5.13"
+toml = ">=0.10.2,<0.11"
+pillow = ">=10.4.0,<10.5"

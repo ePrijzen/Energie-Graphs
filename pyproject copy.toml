@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "energie-graphs"
+version = "0.1.0"
+description = "Script voor grafieken generatie"
+authors = ["itheo.tech <theo@vandersluijs.nl>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "1.5.1"
+APScheduler = "^3.9.1"
+matplotlib = "^3.6.2"
+numpy = "^1.23.2"
+PyYAML = "^6.0"
+requests = "^2.28.1"
+python-dateutil = "^2.8.2"
+gspread = "^5.5.0"
+memory-profiler = "^0.61.0"
+toml = "^0.10.2"
+pillow = "^9.3.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
